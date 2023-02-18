@@ -28,13 +28,13 @@ export default function Home() {
       <div>
         {/* HEADER PART START */}
 
-        <section className="header_area pt-32 pb-20">
+        <section className="header_area pt-60 pb-20">
           <div className="container">
             <div className="flex flex-row">
               <div className="w-full lg:w-1/2">
                 <div className="header_hero_content pt-150 lg:pt-0">
                   <h2 className="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">
-                    We build iconic websites <br />
+                    We build <span className="text-green-500">iconic websites</span> <br />
                     that people love
                   </h2>
                   <p className="mt-8 lg:mr-8">
