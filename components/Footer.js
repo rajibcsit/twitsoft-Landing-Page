@@ -38,19 +38,19 @@ function Footer() {
                     <h2 className="footer_title text-xl font-semibold text-white">Quick Links</h2>
                     <ul className="link pt-4">
                       <li>
-                        <a href="#" className="text-white mt-4 hover:text-theme-color">
+                        <Link href="#" className="text-white mt-4 hover:text-theme-color">
                           Company
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#" className="text-white mt-4 hover:text-theme-color">
+                        <Link href="#" className="text-white mt-4 hover:text-theme-color">
                           Privacy Policy
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#" className="text-white mt-4 hover:text-theme-color">
+                        <Link href="#" className="text-white mt-4 hover:text-theme-color">
                           About
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -58,19 +58,19 @@ function Footer() {
                     <h2 className="footer_title text-xl font-semibold text-white">Resources</h2>
                     <ul className="link pt-4">
                       <li>
-                        <a href="#" className="text-white mt-4 hover:text-theme-color">
+                        <Link href="#" className="text-white mt-4 hover:text-theme-color">
                           Support
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#" className="text-white mt-4 hover:text-theme-color">
+                        <Link href="#" className="text-white mt-4 hover:text-theme-color">
                           Contact
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#" className="text-white mt-4 hover:text-theme-color">
+                        <Link href="#" className="text-white mt-4 hover:text-theme-color">
                           Terms
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -105,7 +105,7 @@ function Footer() {
                       width="30"
                       height="30"
                       fill="currentColor"
-                      class="bi bi-linkedin"
+                      className="bi bi-linkedin"
                       viewBox="0 0 16 16"
                     >
                       <path
@@ -121,7 +121,7 @@ function Footer() {
                       width="30"
                       height="30"
                       fill="currentColor"
-                      class="bi bi-twitter"
+                      className="bi bi-twitter"
                       viewBox="0 0 16 16"
                     >
                       <path

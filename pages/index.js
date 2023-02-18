@@ -1,11 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-// import Link from "next/link";
-// import shapeImage from "../public/images/shape/shape-1.svg";
-// import shapeImage2 from "../public/images/shape/shape-2.svg";
-// import shapeImage3 from "../public/images/shape/shape-3.svg";
-// import shapeImage4 from "../public/images/shape/shape-4.svg";
 import headerImage from "../public/images/header-image.svg";
+import aboutImage from "../public/images/about.svg";
 
 export default function Home() {
   return (
@@ -17,26 +13,42 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
         {/* <link rel="stylesheet" href="assets/css/animate.css" />
-
         <link rel="stylesheet" href="assets/css/tiny-slider.css" />
-
         <link rel="stylesheet" href="assets/fonts/lineicons/font-css/LineIcons.css" />
-
         <link rel="stylesheet" href="assets/css/tailwindcss.css" /> */}
       </Head>
 
       <div>
-        {/* HEADER PART START */}
+        {/*--------- HEADER PART START------------ */}
 
         <section className="header_area pt-60 pb-20">
           <div className="container">
             <div className="flex flex-row">
               <div className="w-full lg:w-1/2">
                 <div className="header_hero_content pt-150 lg:pt-0">
-                  <h2 className="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">
+                  {/* <h2 className="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">
                     We build <span className="text-green-500">iconic websites</span> <br />
                     that people love
-                  </h2>
+                  </h2> */}
+                  <div className="wrapper">
+                    <div className="static-txt text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-4xl font-extrabold">
+                      We build
+                    </div>
+                    <ul className="dynamic-txts text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-4xl font-extrabold">
+                      <li>
+                        <span>SaaS with pleasure</span>
+                      </li>
+                      <li>
+                        <span>iconic websites</span>
+                      </li>
+                      <li>
+                        <span>iOS & android apps</span>
+                      </li>
+                      <li>
+                        <span>Software development </span>
+                      </li>
+                    </ul>
+                  </div>
                   <p className="mt-8 lg:mr-8">
                     Our dedicated IT teams will give you the power of next generation software
                     development solutions to help your business stand out.
@@ -58,6 +70,257 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/*------------------------- HEADER PART END------------ */}
+
+        {/*------------------------- ABOUT PART START------------ */}
+        <section className="about_area pt-28 pb-40" id="about">
+          <div className="container">
+            <div className="row flex justify-center">
+              <div className="w-full lg:w-1/2">
+                <div className="section_title text-center pb-6">
+                  <h5 className="text-red-500 text-2xl font-semibold">About</h5>
+                  <h4 className="text-4xl font-bold">Work Process</h4>
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-3 gap-4 justify-center">
+              <div className="w-full border-dotted border-2 animate-border inline-block bg-white from-pink-500 via-red-500 to-yellow-500 bg-[length:400%_400%] p-0.5 hover:bg-gradient-to-r border-slate-300 rounded-md pb-10">
+                <div className="single_about text-center mt-8 mx-3">
+                  <div className="services_icon flex justify-center">
+                    <div className="parent_img">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="94"
+                        height="92"
+                        viewBox="0 0 94 92"
+                      >
+                        <path
+                          id="Polygon_12"
+                          data-name="Polygon 12"
+                          d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="child_img">
+                      <svg fill="#000000" viewBox="0 0 1920 1920" width="30" height="30">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            d="M1706.235 1807.059H350.941V112.94h903.53v451.765h451.764v1242.353Zm-338.823-1670.74 315.443 315.447h-315.443V136.32Zm402.182 242.487L1440.372 49.58C1408.296 17.62 1365.717 0 1320.542 0H238v1920h1581.175V498.635c0-45.176-17.618-87.755-49.58-119.83ZM576.823 1242.353h790.589v-112.94H576.823v112.94Zm0-451.765h903.53V677.647h-903.53v112.941Zm0 677.647h451.765v-112.941H576.823v112.941Zm0-451.764h677.648V903.53H576.823v112.941Zm0-451.765h451.765V451.765H576.823v112.941Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="about_content mt-5">
+                    <h3 className="about_title text-black font-semibold text-xl md:text-3xl">
+                      Research
+                    </h3>
+                    <p className="mt-4">
+                      Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua.
+                      At vero eos accusam et justo duo dolores
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full border-dotted border-2 animate-border inline-block bg-white from-pink-500 via-red-500 to-yellow-500 bg-[length:400%_400%] p-0.5 hover:bg-gradient-to-r border-slate-300 rounded-md pb-10">
+                <div className="single_about text-center mt-8 mx-3">
+                  <div className="services_icon flex justify-center">
+                    <div className="parent_img">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="94"
+                        height="92"
+                        viewBox="0 0 94 92"
+                      >
+                        <path
+                          id="Polygon_12"
+                          data-name="Polygon 12"
+                          d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="child_img">
+                      <svg fill="#000000" viewBox="0 0 1920 1920" width="30" height="30">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            d="M1706.235 1807.059H350.941V112.94h903.53v451.765h451.764v1242.353Zm-338.823-1670.74 315.443 315.447h-315.443V136.32Zm402.182 242.487L1440.372 49.58C1408.296 17.62 1365.717 0 1320.542 0H238v1920h1581.175V498.635c0-45.176-17.618-87.755-49.58-119.83ZM576.823 1242.353h790.589v-112.94H576.823v112.94Zm0-451.765h903.53V677.647h-903.53v112.941Zm0 677.647h451.765v-112.941H576.823v112.941Zm0-451.764h677.648V903.53H576.823v112.941Zm0-451.765h451.765V451.765H576.823v112.941Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="about_content mt-5">
+                    <h3 className="about_title text-black font-semibold text-xl md:text-3xl">
+                      Prototype
+                    </h3>
+                    <p className="mt-4">
+                      Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua.
+                      At vero eos accusam et justo duo dolores
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full border-dotted border-2 animate-border inline-block bg-white from-pink-500 via-red-500 to-yellow-500 bg-[length:400%_400%] p-0.5 hover:bg-gradient-to-r border-slate-300 rounded-md pb-10">
+                <div className="single_about text-center mt-8 mx-3">
+                  <div className="services_icon flex justify-center">
+                    <div className="parent_img">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="94"
+                        height="92"
+                        viewBox="0 0 94 92"
+                      >
+                        <path
+                          id="Polygon_12"
+                          data-name="Polygon 12"
+                          d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="child_img">
+                      <svg fill="#000000" viewBox="0 0 1920 1920" width="30" height="30">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            d="M1706.235 1807.059H350.941V112.94h903.53v451.765h451.764v1242.353Zm-338.823-1670.74 315.443 315.447h-315.443V136.32Zm402.182 242.487L1440.372 49.58C1408.296 17.62 1365.717 0 1320.542 0H238v1920h1581.175V498.635c0-45.176-17.618-87.755-49.58-119.83ZM576.823 1242.353h790.589v-112.94H576.823v112.94Zm0-451.765h903.53V677.647h-903.53v112.941Zm0 677.647h451.765v-112.941H576.823v112.941Zm0-451.764h677.648V903.53H576.823v112.941Zm0-451.765h451.765V451.765H576.823v112.941Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="about_content mt-5">
+                    <h3 className="about_title text-black font-semibold text-xl md:text-3xl">
+                      Build
+                    </h3>
+                    <p className="mt-4">
+                      Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua.
+                      At vero eos accusam et justo duo dolores
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="why" className="about_area pt-120 relative pb-20">
+          <div className="container">
+            <div className="flex flex-row gap-x-6">
+              <div className="image lg:pr-13">
+                <Image src={aboutImage} alt="about" width={1000} height={900} />
+              </div>
+
+              <div className="">
+                <div className="w-full">
+                  <div className="about_content">
+                    <div className="section_title pb-9">
+                      <h5 className="text-red-500 text-2xl font-semibold">Why Choose Us</h5>
+                      <h4 className="text-3xl font-bold mt-4">Your Goal is Our Achievement</h4>
+                    </div>
+                    <p>
+                      In <span className="text-emerald-500">TwiteSoft</span> we follow a straight,
+                      relaxing and transparent work life that uses an agile approach and not the
+                      "old hierarchies". We want to break down the silos, share all we can and
+                      empower all of us to be the best we can be. There is a word for this
+                      organisation method, and it is Holacracy.
+                    </p>
+                    <div className="text-xl font-semibold mt-6">
+                      <h4>We Like:</h4>
+                    </div>
+                    <ul className="about_list">
+                      <li className="flex mt-5">
+                        <div className="about_check">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M4.5 12.75l6 6 9-13.5"
+                            />
+                          </svg>
+                        </div>
+                        <div className="about_list_content pl-5 pr-2">
+                          <p>Open team based work life</p>
+                        </div>
+                      </li>
+                      <li className="flex mt-5">
+                        <div className="about_check">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M4.5 12.75l6 6 9-13.5"
+                            />
+                          </svg>
+                        </div>
+                        <div className="about_list_content pl-5 pr-2">
+                          <p>Self-thinking agile teams</p>
+                        </div>
+                      </li>
+                      <li className="flex mt-5">
+                        <div className="about_check">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M4.5 12.75l6 6 9-13.5"
+                            />
+                          </svg>
+                        </div>
+                        <div className="about_list_content pl-5 pr-2">
+                          <p>A trust based open mindset</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/*-------------------------- ABOUT PART END------------ */}
       </div>
     </>
   );
