@@ -1,7 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import headerImage from "../public/images/header-image.svg";
 import aboutImage from "../public/images/about.svg";
+import serviceImageWeb from "../public/images/m.jpg";
+import serviceImageSoft from "../public/images/s.png";
+import serviceImageApp from "../public/images/w.png";
 
 export default function Home() {
   return (
@@ -80,7 +84,7 @@ export default function Home() {
               <div className="w-full lg:w-1/2">
                 <div className="section_title text-center pb-6">
                   <h5 className="text-red-500 text-2xl font-semibold">About</h5>
-                  <h4 className="text-4xl font-bold">Work Process</h4>
+                  <h4 className="text-4xl font-bold mt-3">Work Process</h4>
                 </div>
               </div>
             </div>
@@ -321,6 +325,76 @@ export default function Home() {
         </section>
 
         {/*-------------------------- ABOUT PART END------------ */}
+
+        {/*-------------------------- SERVICES PART END------------ */}
+        <section className="services_area pt-28 pb-40" id="services">
+          <div className="container">
+            <div className="row flex justify-center">
+              <div className="w-full lg:w-1/2">
+                <div className="section_title text-center pb-6">
+                  <h5 className="text-red-500 text-2xl font-semibold">What We Do</h5>
+                  <h4 className="text-4xl font-bold mt-3">Our Services</h4>
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-3 gap-4 justify-center">
+              <div className="w-full  pb-10">
+                <div className="single_service text-center mt-8 mx-3 shadow-lg p-2">
+                  <div className="services_icon flex justify-center">
+                    <Image src={serviceImageWeb} alt="services image" height={200} />
+                  </div>
+                  <div className="services_content mt-5">
+                    <h3 className="services_title text-black font-semibold text-xl md:text-3xl hover:text-red-500">
+                      <Link href="#"> Mobile App development</Link>
+                    </h3>
+                    <p className="text-justify mt-4">
+                      With over a decade of experience, TwiteSoft Technology is able to prototype,
+                      design, develop and integrate seamlessly mobile apps with your current
+                      website. Our innovative designs make sure that the user experience of your app
+                      is excellent.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full pb-10">
+                <div className="single_services text-center mt-8 mx-3 shadow-lg p-2">
+                  <div className="services_icon flex justify-center">
+                    <Image src={serviceImageApp} alt="services image" height={200} />
+                  </div>
+                  <div className="services_content mt-5">
+                    <h3 className="services_title text-black font-semibold text-xl md:text-3xl hover:text-red-500">
+                      <Link href="#"> Website development</Link>
+                    </h3>
+                    <p className="text-justify mt-4">
+                      Bespoke website design and development is one of our core skills to help your
+                      business succeed online. We specialize in professional web solutions from
+                      simple one page to complex, database driven, and dynamic websites with a CMS.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full pb-10">
+                <div className="single_services text-center mt-8 mx-3 shadow-lg p-2">
+                  <div className="services_icon flex justify-center">
+                    <Image src={serviceImageSoft} alt="services image" height={200} />
+                  </div>
+                  <div className="services_content mt-5">
+                    <h3 className="services_title text-black font-semibold text-xl md:text-3xl hover:text-red-500">
+                      <Link href="#">Software development</Link>
+                    </h3>
+                    <p className="text-justify mt-4">
+                      Our professional software developers build software systems and dynamic
+                      web-based applications to satisfy even the most complicated business needs. We
+                      can find solutions to even the most complex and demanding issues on time and
+                      on budget.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*-------------------------- SERVICES PART END------------ */}
       </div>
     </>
   );
