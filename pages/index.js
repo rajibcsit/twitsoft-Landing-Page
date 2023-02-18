@@ -6,6 +6,22 @@ import aboutImage from "../public/images/about.svg";
 import serviceImageWeb from "../public/images/m.jpg";
 import serviceImageSoft from "../public/images/s.png";
 import serviceImageApp from "../public/images/w.png";
+import projectPos from "../public/images/pos.jpg";
+import projectBlog from "../public/images/blogs.jpg";
+import projectEcomm from "../public/images/ecom.png";
+import projectSch from "../public/images/school.jpg";
+import techImg from "../public/images/tech/program11.jpg";
+import techImg1 from "../public/images/tech/program14.png";
+import techImg2 from "../public/images/tech/program3.jpg";
+import techImg3 from "../public/images/tech/program10.jpg";
+import techImg4 from "../public/images/tech/program7.jpg";
+import techImg5 from "../public/images/tech/vue.png";
+import techImg6 from "../public/images/tech/program15.png";
+import techImg7 from "../public/images/tech/program17.png";
+import techImg8 from "../public/images/tech/program16.jpg";
+import techImg9 from "../public/images/tech/next.svg";
+import techImg10 from "../public/images/tech/tailwind.webp";
+import techImg11 from "../public/images/tech/program4.png";
 
 export default function Home() {
   return (
@@ -327,7 +343,7 @@ export default function Home() {
         {/*-------------------------- ABOUT PART END------------ */}
 
         {/*-------------------------- SERVICES PART END------------ */}
-        <section className="services_area pt-28 pb-40" id="services">
+        <section className="services_area pt-28 pb-16" id="services">
           <div className="container">
             <div className="row flex justify-center">
               <div className="w-full lg:w-1/2">
@@ -395,6 +411,282 @@ export default function Home() {
           </div>
         </section>
         {/*-------------------------- SERVICES PART END------------ */}
+
+        {/*-------------------------- PROJECTS PART START------------ */}
+        <section className="project_area pt-28 pb-28 bg-gray-50" id="project">
+          <div className="container">
+            <div className="row flex justify-center">
+              <div className="w-full lg:w-1/2">
+                <div className="section_title text-center pb-6">
+                  <h5 className="text-red-500 text-2xl font-semibold">We love development</h5>
+                  <h4 className="text-4xl font-bold mt-3">Some of Our Recent Works</h4>
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-3 gap-2 justify-center">
+              <div className="w-full">
+                <div className="single_service text-center mt-8 mx-3 shadow-lg p-2">
+                  <div className="services_icon flex justify-center">
+                    <Image src={projectSch} alt="services image" height={200} />
+                  </div>
+                  <div className="services_content mt-5">
+                    <h3 className="services_title text-black font-semibold text-xl md:text-xl hover:text-red-500">
+                      <Link href="#"> SCHOOL MANAGEMENT SYSTEM</Link>
+                    </h3>
+                    <p className="text-justify mt-4">PHP, Laravel , MySQL</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full">
+                <div className="single_services text-center mt-8 mx-3 shadow-lg p-2">
+                  <div className="services_icon flex justify-center">
+                    <Image src={projectPos} alt="services image" height={200} />
+                  </div>
+                  <div className="services_content mt-5 pb-3">
+                    <h3 className="services_title text-black font-semibold text-xl md:text-xl hover:text-red-500">
+                      <Link href="#"> POS SYSTEM</Link>
+                    </h3>
+                    <p className="text-justify mt-4">Vue,PHP, Laravel , MySQL</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full">
+                <div className="single_services text-center mt-8 mx-3 shadow-lg p-2">
+                  <div className="services_icon flex justify-center">
+                    <Image src={projectBlog} alt="services image" height={200} />
+                  </div>
+                  <div className="services_content mt-5">
+                    <h3 className="services_title text-black font-semibold text-xl md:text-xl hover:text-red-500">
+                      <Link href="#">BLOG SYSTEM</Link>
+                    </h3>
+                    <p className="text-justify mt-4">PHP, Laravel , MySQL</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full ">
+                <div className="single_services text-center mt-8 mx-3 shadow-lg p-2">
+                  <div className="services_icon flex justify-center">
+                    <Image src={projectEcomm} alt="services image" height={200} />
+                  </div>
+                  <div className="services_content mt-5">
+                    <h3 className="services_title text-black font-semibold text-xl md:text-xl hover:text-red-500">
+                      <Link href="#">E-COMMERCE WEBSITE</Link>
+                    </h3>
+                    <p className="text-justify mt-4">PHP, Laravel , MySQL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*-------------------------- PROJECTS PART END------------ */}
+
+        {/*-------------------------- Technology PART Start------------ */}
+        <section className="technology_area pb-40 bg-gray-50">
+          <div className="container">
+            <div className="row flex justify-center">
+              <div className="w-full lg:w-1/2">
+                <div className="section_title text-center pb-6">
+                  <h5 className="text-red-500 text-2xl font-semibold">TECHNOLOGIES</h5>
+                  <h4 className="text-xl font-bold mt-3">All The Technologies That We Use</h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-4 gap-4">
+              <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg ">
+                <Image
+                  src={techImg}
+                  alt="image"
+                  className="rounded-full p-3"
+                  width={70}
+                  height={70}
+                />
+
+                <div className="flex flex-col justify-start p-2">
+                  <h5 className="text-gray-900 text-xl font-semibold mb-2 hover:underline">
+                    <Link href="#">Python </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg ">
+                <Image
+                  src={techImg1}
+                  alt="image"
+                  className="rounded-full p-3"
+                  width={100}
+                  height={100}
+                />
+
+                <div className="flex flex-col justify-start p-2">
+                  <h5 className="text-gray-900 text-xl font-semibold mb-2 hover:underline">
+                    <Link href="#">Laravel </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg ">
+                <Image
+                  src={techImg2}
+                  alt="image"
+                  className="rounded-full p-3"
+                  width={100}
+                  height={100}
+                />
+
+                <div className="flex flex-col justify-start p-2">
+                  <h5 className="text-gray-900 text-xl font-semibold mb-2 hover:underline">
+                    <Link href="#">JavaScript </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg ">
+                <Image
+                  src={techImg3}
+                  alt="image"
+                  className="rounded-full p-3"
+                  width={100}
+                  height={100}
+                />
+
+                <div className="flex flex-col justify-start p-2">
+                  <h5 className="text-gray-900 text-xl font-semibold mb-2 hover:underline">
+                    <Link href="#">PHP </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg ">
+                <Image
+                  src={techImg4}
+                  alt="image"
+                  className="rounded-full p-3"
+                  width={100}
+                  height={100}
+                />
+
+                <div className="flex flex-col justify-start p-2">
+                  <h5 className="text-gray-900 text-xl font-semibold mb-2 hover:underline">
+                    <Link href="#">React </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg ">
+                <Image
+                  src={techImg5}
+                  alt="image"
+                  className="rounded-full p-3"
+                  width={100}
+                  height={100}
+                />
+
+                <div className="flex flex-col justify-start p-2">
+                  <h5 className="text-gray-900 text-xl font-semibold mb-2 hover:underline">
+                    <Link href="#">Vue JS </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg ">
+                <Image
+                  src={techImg6}
+                  alt="image"
+                  className="rounded-full p-3"
+                  width={100}
+                  height={100}
+                />
+
+                <div className="flex flex-col justify-start p-2">
+                  <h5 className="text-gray-900 text-xl font-semibold mb-2 hover:underline">
+                    <Link href="#">Django </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg ">
+                <Image
+                  src={techImg7}
+                  alt="image"
+                  className="rounded-full p-3"
+                  width={100}
+                  height={100}
+                />
+
+                <div className="flex flex-col justify-start p-2">
+                  <h5 className="text-gray-900 text-xl font-semibold mb-2 hover:underline">
+                    <Link href="#">MongoDB </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg ">
+                <Image
+                  src={techImg8}
+                  alt="image"
+                  className="rounded-full p-3"
+                  width={100}
+                  height={100}
+                />
+
+                <div className="flex flex-col justify-start p-2">
+                  <h5 className="text-gray-900 text-xl font-semibold mb-2 hover:underline">
+                    <Link href="#">MySQL </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg ">
+                <Image
+                  src={techImg9}
+                  alt="image"
+                  className="rounded-full p-3"
+                  width={100}
+                  height={100}
+                />
+
+                <div className="flex flex-col justify-start p-2">
+                  <h5 className="text-gray-900 text-xl font-semibold mb-2 hover:underline">
+                    <Link href="#">Next JS </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg ">
+                <Image
+                  src={techImg10}
+                  alt="image"
+                  className="rounded-full p-3"
+                  width={100}
+                  height={100}
+                />
+
+                <div className="flex flex-col justify-start p-2">
+                  <h5 className="text-gray-900 text-xl font-semibold mb-2 hover:underline">
+                    <Link href="#">Tailwind CSS </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row rounded-lg bg-white shadow-lg ">
+                <Image
+                  src={techImg11}
+                  alt="image"
+                  className="rounded-full p-3"
+                  width={100}
+                  height={100}
+                />
+
+                <div className="flex flex-col justify-start p-2">
+                  <h5 className="text-gray-900 text-xl font-semibold mb-2 hover:underline">
+                    <Link href="#">Bootstrap </Link>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div className="row flex justify-center mt-8">
+              <Link
+                href=""
+                type="button"
+                className="inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"
+              >
+                Show More
+              </Link>
+            </div>
+          </div>
+        </section>
+        {/*-------------------------- Technology PART END------------ */}
       </div>
     </>
   );
