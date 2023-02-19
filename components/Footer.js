@@ -7,7 +7,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <div>
-      <footer id="footer" className="footer_area bg-black relative z-10">
+      <footer id="footer" className="footer_area bg-slate-500 relative z-10">
         <div className="shape absolute left-0 top-0 opacity-5 h-full overflow-hidden w-1/3">
           <Image src={footerShape} alt="footer-logo" />
         </div>
@@ -25,7 +25,7 @@ function Footer() {
                     </Link>
                   </div>
                   <div className="footer_content mt-8">
-                    <p className="text-white">
+                    <p className="text-white font-semibold">
                       Our dedicated IT teams will give you the power of next generation software
                       development solutions to help your business stand out.
                     </p>
@@ -38,17 +38,26 @@ function Footer() {
                     <h2 className="footer_title text-xl font-semibold text-white">Quick Links</h2>
                     <ul className="link pt-4">
                       <li>
-                        <Link href="#" className="text-white mt-4 hover:text-theme-color">
+                        <Link
+                          href="#"
+                          className="text-white font-semibold mt-4 hover:text-theme-color"
+                        >
                           Company
                         </Link>
                       </li>
                       <li>
-                        <Link href="#" className="text-white mt-4 hover:text-theme-color">
+                        <Link
+                          href="#"
+                          className="text-white font-semibold mt-4 hover:text-theme-color"
+                        >
                           Privacy Policy
                         </Link>
                       </li>
                       <li>
-                        <Link href="#" className="text-white mt-4 hover:text-theme-color">
+                        <Link
+                          href="#"
+                          className="text-white font-semibold mt-4 hover:text-theme-color"
+                        >
                           About
                         </Link>
                       </li>
@@ -58,17 +67,26 @@ function Footer() {
                     <h2 className="footer_title text-xl font-semibold text-white">Resources</h2>
                     <ul className="link pt-4">
                       <li>
-                        <Link href="#" className="text-white mt-4 hover:text-theme-color">
+                        <Link
+                          href="#"
+                          className="text-white font-semibold mt-4 hover:text-theme-color"
+                        >
                           Support
                         </Link>
                       </li>
                       <li>
-                        <Link href="#" className="text-white mt-4 hover:text-theme-color">
+                        <Link
+                          href="#"
+                          className="text-white font-semibold mt-4 hover:text-theme-color"
+                        >
                           Contact
                         </Link>
                       </li>
                       <li>
-                        <Link href="#" className="text-white mt-4 hover:text-theme-color">
+                        <Link
+                          href="#"
+                          className="text-white font-semibold mt-4 hover:text-theme-color"
+                        >
                           Terms
                         </Link>
                       </li>
@@ -78,16 +96,17 @@ function Footer() {
               </div>
               <div className="basis-1/2 w-full md:w-2/3 lg:w-4/12">
                 <div className="footer_subscribe mt-13 mx-3">
-                  <h2 className="footer_title text-xl font-semibold text-white">Newsletter</h2>
-                  <div className="subscribe_form text-right mt-9 relative">
-                    <form action="#">
-                      <input
-                        type="text"
-                        placeholder="Enter email"
-                        className="w-full py-5 px-6 bg-white text-black rounded-full border-none"
-                      />
-                      <button className="main-btn subscribe-btn">Subscribe</button>
-                    </form>
+                  <h2 className="footer_title text-xl font-semibold text-white">Our Address</h2>
+                  <div className="address  mt-9 relative">
+                    <p className="text-white font-semibold mt-4 hover:text-theme-color">
+                      Email: twitesoft@gmail.com
+                    </p>
+                    <p className="text-white font-semibold mt-4 hover:text-theme-color">
+                      Phone: +8801914-682468
+                    </p>
+                    <p className="text-white font-semibold mt-4 hover:text-theme-color">
+                      Address: H# 469, R# 07, Avenue# 6, Mirpur-12 DOHS, Dhaka - 1216
+                    </p>
                   </div>
                 </div>
               </div>
@@ -97,53 +116,38 @@ function Footer() {
             <div className="footer_social pt-4 mx-3 text-center">
               <ul className="social flex justify-center sm:justify-start">
                 <li className="mr-3">
-                  <Link href=""></Link>
-                </li>
-                <li className="mr-3">
                   <Link href="#">
                     <svg
-                      width="30"
-                      height="30"
-                      fill="currentColor"
-                      className="bi bi-linkedin"
-                      viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
                     >
-                      <path
-                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                        fill="blue"
-                      ></path>
+                      <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
                     </svg>
                   </Link>
                 </li>
                 <li className="mr-3">
                   <Link href="#">
                     <svg
-                      width="30"
-                      height="30"
-                      fill="currentColor"
-                      className="bi bi-twitter"
-                      viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
                     >
-                      <path
-                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                        fill="blue"
-                      ></path>
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                   </Link>
                 </li>
                 <li className="mr-3 text-white">
-                  <Link href="">
+                  <Link href="#">
                     <svg
-                      width="30"
-                      height="30"
-                      fill="currentColor"
-                      className="bi bi-twitte"
-                      viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
                     >
-                      <path
-                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                        fill="blue"
-                      ></path>
+                      <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z" />
                     </svg>
                   </Link>
                 </li>
@@ -151,7 +155,7 @@ function Footer() {
             </div>
             <div className="footer_copyright_content pt-4 text-center">
               <p className="text-white text-sm font-semibold">
-                Copyright © 2023, TwitSoft. All rights reserved.
+                Copyright © 2023, TwiteSoft. All rights reserved.
               </p>
             </div>
           </div>

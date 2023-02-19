@@ -991,7 +991,7 @@ export default function Home() {
         {/*-------------------------- TEAM PART END------------ */}
 
         {/*-------------------------- CONTACT PART START------------ */}
-        <section className="contact_area pt-20 bg-gray-50 pb-20">
+        <section className="contact_area pt-20 bg-gray-50 pb-20" id="contact">
           <div className="container">
             <div className="flex flex-row">
               <div className="contact hidden lg:block">

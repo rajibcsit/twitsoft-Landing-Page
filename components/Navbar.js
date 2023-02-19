@@ -2,17 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import websiteLogo from "../public/images/logo.png";
 
-import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "About", href: "/", current: false },
-  { name: "Services", href: "/", current: false },
-  { name: "Projects", href: "/", current: false },
-  { name: "Team", href: "/", current: false },
-  { name: "Contact", href: "/", current: false },
+  { name: "About", href: "#about", current: false },
+  { name: "Services", href: "#services", current: false },
+  { name: "Projects", href: "#project", current: false },
+  { name: "Team", href: "#team", current: false },
+  { name: "Contact", href: "#contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -44,8 +43,8 @@ export default function Navbar() {
                   </Link>
                 </div>
               </div>
-              <div className="hidden sm:ml-6 sm:block">
-                <div className="flex space-x-4 justify-items-end">
+              <div className="absolute left-0 z-50 hidden w-full px-5 py-3 duration-300 bg-white lg:w-auto navbar-collapse lg:block top-full mt-full lg:static lg:bg-transparent shadow lg:shadow-none ">
+                <div className="flex space-x-4 justify-items-end items-center content-start mr-auto lg:justify-end navbar-nav lg:flex">
                   {navigation.map((item) => (
                     <Link
                       key={item.name}
